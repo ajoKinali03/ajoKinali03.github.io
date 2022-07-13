@@ -1,3 +1,19 @@
+/* 
+	--konsep baru--
+	IDE ANIMASI LATAR BELAKANG.
+	konsep animasi: dot pemandu
+	ide: ketika browser awal di buka akan di tampilkan teks pembkaan pada posisi kiri 
+		 user dan sebuah dot atau lingkaran besar yang bercahaya ada dikanan user dot tsb akan mengelurkan cahaya yang berdenyut setipa satu detik dengan dua kali berdenyut. saat tombol menuju ke halaman selanjutnya di tekan maka dot akan bergerak meliuk ke kiri sambil meneceil sehingga bola tsb bergerak menjauh atau pergi
+		 
+	IDE ANIMASI BTN SKIP HALAMAN.
+	konsep animasi: memeberi kode.
+	ide: tombol yang berbentuk panah tsb akan bergerak kebewah sebanyak dua kali dengan 
+		 cepat dan di iringi warnya yang memekat, dengan interval waktu 5 mili detik 
+*/
+
+
+
+
 
 *{
 	/* outline: solid 1px green; */
@@ -7,6 +23,7 @@
 :root{
 	font-size: 20px;
 	font-family: sans-serif;
+	--btn-skip-size: 6vw;
 }
 
 .container{
@@ -18,7 +35,7 @@
 .header{
 	width: 100%;
 	height: 100%;
-	background-color: rgb(5, 4, 33);
+	background-color: rgb(6, 3, 18);
 	color: white;
 }
 
@@ -27,27 +44,36 @@
 	height: inherit;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
 }
 
 .header >.header-content >.introduce{
+	margin-left: 100px;
 	width: 50%;
 }
 
-.img{
-	width: 100px;
-	height: 200px;
-	background-color: white;
+.header > .dot{
+	position: absolute;
+	top: calc(50vh - 150px);
+	left: calc(70vw);
+	width: 300px;
+	height: 300px;
+	background-color: rgb(122, 182, 255);
+	border-radius: 50%;
+	box-shadow: 0 0 80px 10px rgb(102, 161, 255);
 }
 
+
+@keyframes animasi-dot{
+	
+}
 
 
 .header >.skip-btn{
 	position: absolute;
-	top: 550px;
-	left: 46vw;
-	width: 8vw;
-	height: 8vw;
+	top: 82vh;
+	left: calc(50vw - var(--btn-skip-size) / 2);
+	width: var(--btn-skip-size);
+	height: var(--btn-skip-size);
 	border-top: solid 5px white;
 	border-left: solid 5px white;
 	transform: rotate(225deg);
