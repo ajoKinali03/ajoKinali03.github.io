@@ -10,6 +10,7 @@
 	--btn-skip-size: 6vw;
 	--ctn-width: 90%;
 	--ctn-height: 80%;
+	--border-rds-level: 80px;
 }
 
 .container{
@@ -73,18 +74,65 @@
 	height: var(--ctn-height);
 	background-color: rgba(255, 255, 255, .7);
 	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
 }
 
-.content .about-me{
-	visibility: hidden;
+.content .penengah{
+	width: inherit;
 }
 
-.content .my-skill{
-	background-color: aqua;
+.content .penengah span{
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+}
+
+.content .penengah .about-me{
 	visibility: visible;
 }
 
-.content .my-project{
+.content .penengah .about-me > p:nth-child(3),
+.content .penengah .about-me > p:nth-child(5){
+	margin-top: 50px;
+}
+
+.content .penengah .about-me > div{
+	margin: 10px 0;
+	height: 5px;
+	width: inherit;
+	background-color: rgb(167, 167, 167);
+	border-radius: var(--border-rds-level);
+}
+
+.content .penengah .about-me .html-level-container .html-level-content{
+	height: inherit;
+	width: 5%;
+	border-radius: var(--border-rds-level);
+	background-color: rgb(232, 79, 44);
+}
+
+.content .penengah .about-me .css-level-container .css-level-content{
+	height: inherit;
+	width: 3%;
+	border-radius: var(--border-rds-level);
+	background-color: rgb(69, 120, 214);
+}
+
+.content .penengah .about-me .js-level-container .js-level-content{
+	height: inherit;
+	width: 15%;
+	border-radius: var(--border-rds-level);
+	background-color: rgb(255, 255, 47);
+}
+
+.content .penengah .my-skill{
+	visibility: hidden;
+}
+
+.content .penengah .my-project{
 	visibility: hidden;
 }
 
