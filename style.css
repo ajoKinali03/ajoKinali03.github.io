@@ -6,7 +6,7 @@
 
 :root{
 	font-size: 25px;
-	font-family: 'Raleway', sans-serif;;
+	font-family: 'Raleway', sans-serif;
 	--btn-skip-size: 4vw;
 	--ctn-width: 90%;
 	--ctn-height: 80%;
@@ -98,23 +98,22 @@
 .content .penengah .about-me{
 	color: rgb(48, 58, 74);
 	font-weight: bold;
-	display: block;
+	display: none;
 }
 
 .content .penengah .my-skill{
 	display: none;
 }
 
-.content .penengah .my-skill > p:nth-child(3),
-.content .penengah .my-skill > p:nth-child(5){
-	margin-top: 50px;
+.content .penengah .my-skill > p:nth-child(n+2){
+	margin-top: 35px;
 }
 
 .content .penengah .my-skill > div{
 	margin: 10px 0;
 	height: 5px;
 	width: inherit;
-	background-color: rgb(154, 160, 187);
+	background-color: rgb(142, 144, 152);
 	border-radius: var(--border-rds-level);
 }
 
@@ -139,8 +138,65 @@
 	background-color: rgb(255, 255, 47);
 }
 
+.content .penengah .my-skill .ps-level-container .ps-level-content{
+	height: inherit;
+	width: 50%;
+	border-radius: var(--border-rds-level);
+	background-color: rgb(26, 23, 214);
+}
+
 .content .penengah .my-project{
-	display: none;
+	display: block;
+	width: 100%;
+
+}
+
+.content .penengah .my-project .my-project-content{
+	display: flex;
+}
+
+.content .penengah .my-project .my-project-content div{
+	height: 64vh;
+	width: 100%;
+	margin: 0 10px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.content .penengah .my-project .my-project-content > div > p{
+	visibility: hidden;
+	width: inherit;
+	background-color: rgba(191, 253, 255, 0.5);
+	text-align: center;
+	padding: 5px 0;
+	font-weight: 300;
+}
+
+.content .penengah .my-project .my-project-content div:hover p{
+	visibility: visible;
+}
+
+
+.content .penengah .my-project .my-project-content .project-1{
+	background-image: url(img/wa-image.jpg);
+	background-size: cover;
+}
+
+
+.content .penengah .my-project .my-project-content .project-2{
+	background-image: url(img/hamzah-image.jpg);
+	background-size: cover;
+	background-position: 50%, 0;
+}
+
+
+.content .penengah .my-project .my-project-content .project-3{
+	background-image: url(img/dot-image1.jpg);
+	background-size: cover;
+	background-position: 50%, 0;
 }
 
 
