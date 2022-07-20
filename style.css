@@ -5,13 +5,13 @@
 }
 
 :root{
-	font-size: 25px;
+	font-size: 2vw;
 	font-family: 'Raleway', sans-serif;
 	--btn-skip-size: 4vw;
 	--ctn-width: 90%;
 	--ctn-height: 80%;
 	--border-rds-level: 80px;
-	--btn-skp-top: 89vh;
+	--btn-skp-top: 88vh;
 	--slider-bg-color: rgb(110, 119, 152);
 	--slider-arrow-size: 18px;
 	--slider-border-size: 2px;
@@ -25,7 +25,7 @@
 
 /* bagian header atau halaman awal */
 .header{
-	display: none;
+	visibility: visible;
 	position: absolute;
 	z-index: 1;
 	width: 100%;
@@ -62,6 +62,7 @@
 
 /* bagian kontent atau halaman ke dua */
 .container-content{
+	visibility: hidden;
 	position: absolute;
 	z-index: 0;
 	width: 100%;
@@ -95,12 +96,19 @@
 	width: inherit;
 }
 
+
+
+/* content bagian about me */
 .content .penengah .about-me{
 	color: rgb(48, 58, 74);
 	font-weight: bold;
-	display: none;
+	display: block;
+	/* font-size: 1.2rem; */
 }
 
+
+
+/* content bagian skill */
 .content .penengah .my-skill{
 	display: none;
 }
@@ -145,8 +153,12 @@
 	background-color: rgb(26, 23, 214);
 }
 
+
+
+
+/* content bagian my project */
 .content .penengah .my-project{
-	display: block;
+	display: none;
 	width: 100%;
 
 }
@@ -173,10 +185,13 @@
 	text-align: center;
 	padding: 5px 0;
 	font-weight: 300;
+	opacity: 0;
+	transition: .5s;
 }
 
 .content .penengah .my-project .my-project-content div:hover p{
 	visibility: visible;
+	opacity: 1;
 }
 
 
@@ -200,6 +215,8 @@
 }
 
 
+
+/* bagaian bawah pada content, sebagai penggeser isi kontent */
 .slider-container{
 	width: 100%;
 	height: 40px;
@@ -245,6 +262,7 @@
 
 
 
+/* skip btn yang ada pada di container luar */
 .skip-btn{
 	position: absolute;
 	z-index: 2;
@@ -265,6 +283,31 @@
 	100%{top: calc(var(--btn-skp-top) + 5px); opacity: .1;}
 }
 
+
+
+
+
+/* responsif */
+
+@media screen and (max-width: 1400px){
+	.header .header-content .introduce {font-size: 1.9rem;}
+	.header .header-content .introduce h2{font-size: 3rem;}
+	.container-content{font-size: 1.8rem;}
+	.skip-btn{
+		width: calc(var(--btn-skip-size) + 25px);
+		height: calc(var(--btn-skip-size) + 25px); 
+	}
+}
+
+@media screen and (max-width: 600px){
+	.header .header-content .introduce {font-size: 1.9rem;}
+	.header .header-content .introduce h2{font-size: 3rem;}
+	.container-content{font-size: 1.8rem;}
+	.skip-btn{
+		width: calc(var(--btn-skip-size) + 25px);
+		height: calc(var(--btn-skip-size) + 25px); 
+	}
+}
 
 
 
