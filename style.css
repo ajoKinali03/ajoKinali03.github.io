@@ -19,6 +19,7 @@
 }
 
 .container{
+	/* font-size: 25px; */
 	width: 100vw;
 	height: 100vh;
 }
@@ -289,20 +290,22 @@
 
 /* responsif */
 
-@media screen and (max-width: 1400px){
-	.header .header-content .introduce {font-size: 1.9rem;}
-	.header .header-content .introduce h2{font-size: 3rem;}
-	.container-content{font-size: 1.8rem;}
+
+
+@media screen and (max-width: 900px){
+	.header .header-content .introduce {font-size: 2rem;}
+	.header .header-content .introduce h2{font-size: 3.5rem;}
+	.container-content{font-size: 1.3rem;}
 	.skip-btn{
-		width: calc(var(--btn-skip-size) + 25px);
-		height: calc(var(--btn-skip-size) + 25px); 
+		width: calc(var(--btn-skip-size) + 20px);
+		height: calc(var(--btn-skip-size) + 20px); 
 	}
 }
 
 @media screen and (max-width: 600px){
-	.header .header-content .introduce {font-size: 1.9rem;}
-	.header .header-content .introduce h2{font-size: 3rem;}
-	.container-content{font-size: 1.8rem;}
+	.header .header-content .introduce {font-size: 2rem;}
+	.header .header-content .introduce h2{font-size: 3.5rem;}
+	.container-content{font-size: 1.5rem;}
 	.skip-btn{
 		width: calc(var(--btn-skip-size) + 25px);
 		height: calc(var(--btn-skip-size) + 25px); 
