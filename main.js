@@ -39,7 +39,7 @@ const btnRight = document.getElementsByClassName('arrow-right')[0];
 
 
 const countObj = {
-    count: 0,
+    count: 1,
 };
 
 btnRight.addEventListener('click', () => {
