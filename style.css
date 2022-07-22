@@ -217,6 +217,16 @@
 
 
 
+.content .penengah .ctnDisplay{
+	display: block !important;
+}
+
+.content .penengah .default{
+	display: none;
+}
+
+
+
 /* bagaian bawah pada content, sebagai penggeser isi kontent */
 .slider-container{
 	width: 100%;
