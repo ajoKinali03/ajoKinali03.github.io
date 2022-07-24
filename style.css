@@ -75,6 +75,7 @@
 }
 
 .content{
+	overflow: auto;
 	position: absolute;
 	top: calc(50% - (var(--ctn-height) / 2));
 	left: calc(50% - (var(--ctn-width) / 2));
@@ -161,7 +162,6 @@
 .content .penengah .my-project{
 	display: none;
 	width: 100%;
-
 }
 
 .content .penengah .my-project .my-project-content{
@@ -171,7 +171,7 @@
 .content .penengah .my-project .my-project-content div{
 	height: 64vh;
 	width: 100%;
-	margin: 0 10px;
+	margin: 10px;
 	background-color: black;
 	display: flex;
 	justify-content: center;
@@ -199,6 +199,7 @@
 .content .penengah .my-project .my-project-content .project-1{
 	background-image: url(img/wa-image.jpg);
 	background-size: cover;
+	background-position: 50%, 0;
 }
 
 
@@ -256,8 +257,12 @@
 	height: var(--slider-dot-size);
 	width: var(--slider-dot-size);
 	background-color: var(--slider-bg-color);
-	border-radius: 50%;
+	border-radius: 50px;
 	margin: 0 3px;
+}
+
+.slider-container div:nth-child(2){
+	width: 15px;
 }
 
 
@@ -306,6 +311,7 @@
 	.header .header-content .introduce {font-size: 2rem;}
 	.header .header-content .introduce h2{font-size: 3.5rem;}
 	.container-content{font-size: 1.3rem;}
+	.content .penengah .my-project .my-project-content{flex-direction: column};
 	.skip-btn{
 		width: calc(var(--btn-skip-size) + 20px);
 		height: calc(var(--btn-skip-size) + 20px); 
