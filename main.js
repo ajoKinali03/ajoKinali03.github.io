@@ -38,7 +38,6 @@ const btnRight = document.getElementsByClassName('arrow-right')[0];
 
 const countObj = {
     count: 0,
-    position: 0,
 };
 
 const contentObj = {
@@ -118,8 +117,6 @@ btnRight.addEventListener('click', () => {
         dotObj.animasiOff(1);
         dotObj.animasiOn(2);
     };
-
-    console.log(countObj.count , countObj.position);
 });
 
 btnLeft.addEventListener('click', () => {
@@ -136,7 +133,6 @@ btnLeft.addEventListener('click', () => {
             dotObj.animasiOn(0);
             dotObj.animasiOff(1);
             dotObj.animasiOff(2);
-            console.log('sekarang di nol');
         };
 
         if(countObj.count == 1){
@@ -145,7 +141,6 @@ btnLeft.addEventListener('click', () => {
             dotObj.animasiOff(0);
             dotObj.animasiOn(1);
             dotObj.animasiOff(2);
-            console.log('sekarang di satu');
         };
 
         if(countObj.count == 2){
@@ -155,12 +150,6 @@ btnLeft.addEventListener('click', () => {
             dotObj.animasiOff(1);
             dotObj.animasiOn(2);
         };
-        
-        // if(countObj.position > 0){
-        //     countObj.count -= 1;
-        // };
-        
-        // countObj.position--;
-        console.log(countObj.count , countObj.position);
+
     };
 });
