@@ -1,8 +1,14 @@
 
 *{
-	/* outline: solid 1px green; */
+	outline: solid 1px green;
 	box-sizing: border-box;
 }
+
+*::selection{
+	background-color: rgba(0,0,0,.8);
+	color: white;
+}
+
 
 :root{
 	font-size: 2vw;
@@ -82,7 +88,7 @@
 	width: var(--ctn-width);
 	height: var(--ctn-height);
 	background-color: rgba(186, 204, 215, 0.8);
-	border-radius: 20px;
+	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -169,13 +175,14 @@
 }
 
 .content .penengah .my-project .my-project-content div{
-	height: 64vh;
+	height: 50vh;
 	width: 100%;
-	margin: 10px;
+	margin: 10px 5px;
 	background-color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 5px;
 }
 
 
@@ -311,7 +318,10 @@
 	.header .header-content .introduce {font-size: 2rem;}
 	.header .header-content .introduce h2{font-size: 3.5rem;}
 	.container-content{font-size: 1.3rem;}
-	.content .penengah .my-project .my-project-content{flex-direction: column};
+	.content .penengah .my-project{margin-top: 920px;}
+	.content .penengah .my-project .my-project-content{
+		flex-direction: column;
+	};
 	.skip-btn{
 		width: calc(var(--btn-skip-size) + 20px);
 		height: calc(var(--btn-skip-size) + 20px); 
@@ -322,6 +332,7 @@
 	.header .header-content .introduce {font-size: 2rem;}
 	.header .header-content .introduce h2{font-size: 3.5rem;}
 	.container-content{font-size: 1.5rem;}
+	.content .penengah .my-project{margin-top: 600px;}
 	.skip-btn{
 		width: calc(var(--btn-skip-size) + 25px);
 		height: calc(var(--btn-skip-size) + 25px); 

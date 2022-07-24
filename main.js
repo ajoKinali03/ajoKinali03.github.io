@@ -3,6 +3,8 @@
 const header = document.getElementsByClassName('header')[0];
 const containerContent = document.getElementsByClassName('container-content')[0];
 const pageBtn = document.getElementsByClassName('skip-btn')[0];
+const contentPopUp = document.getElementsByClassName('content')[0];
+const contrSlider = document.getElementsByClassName('slider-container')[0];
 let biner = 0;
 
 pageBtn.addEventListener('click', () => {
@@ -15,6 +17,18 @@ pageBtn.addEventListener('click', () => {
         header.style.visibility = 'hidden';
         header.style.transition = '1s';
         containerContent.style.visibility = 'visible';
+        contentPopUp.style.opacity = '0';
+        contentPopUp.style.transform = 'translateY(50px)';
+        contrSlider.style.opacity = '0';
+        setTimeout(() => {
+            contentPopUp.style.opacity = '1';
+            contentPopUp.style.transform = 'translateY(0)';
+            contentPopUp.style.transition = '.8s';
+        }, 300);
+        setTimeout(() => {
+            contrSlider.style.opacity = '1';
+            contrSlider.style.transition = '1s';
+        }, 500);
     };
     if(biner == 2){
 
@@ -23,6 +37,11 @@ pageBtn.addEventListener('click', () => {
         header.style.transform = 'translateY(0)';
         header.style.visibility = 'visible';
         header.style.transition = '1s';
+        contentPopUp.style.opacity = '0';
+        contentPopUp.style.transform = 'translateY(50px)';
+        contentPopUp.style.transition = '.5s';
+        contrSlider.style.opacity = '0';
+        contrSlider.style.transition = '.1s';
         setTimeout(() => {
             containerContent.style.visibility = 'hidden';
         }, 1000);
