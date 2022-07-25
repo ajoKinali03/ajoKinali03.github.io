@@ -108,10 +108,10 @@
 
 /* content bagian about me */
 .content .penengah .about-me{
-	color: rgb(48, 58, 74);
+	color: rgb(69, 83, 106);
 	font-weight: bold;
 	display: block;
-	/* font-size: 1.2rem; */
+	line-height: 25px;
 }
 
 
@@ -174,19 +174,21 @@
 	display: flex;
 }
 
-.content .penengah .my-project .my-project-content div{
+.content .penengah .my-project .my-project-content a{
 	height: 50vh;
 	width: 100%;
-	margin: 10px 5px;
+	margin: 5px .5px;
 	background-color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
+	text-decoration: none;
+	color: black;
 }
 
 
-.content .penengah .my-project .my-project-content > div > p{
+.content .penengah .my-project .my-project-content > a > p{
 	visibility: hidden;
 	width: inherit;
 	background-color: rgba(191, 253, 255, 0.5);
@@ -194,10 +196,10 @@
 	padding: 5px 0;
 	font-weight: 300;
 	opacity: 0;
-	transition: .5s;
+	transition: .3s;
 }
 
-.content .penengah .my-project .my-project-content div:hover p{
+.content .penengah .my-project .my-project-content a:hover p{
 	visibility: visible;
 	opacity: 1;
 }
@@ -332,7 +334,7 @@
 	.header .header-content .introduce {font-size: 2rem;}
 	.header .header-content .introduce h2{font-size: 3.5rem;}
 	.container-content{font-size: 1.5rem;}
-	.content .penengah .my-project{margin-top: 600px;}
+	.content .penengah .my-project{margin-top: 500px;}
 	.skip-btn{
 		width: calc(var(--btn-skip-size) + 25px);
 		height: calc(var(--btn-skip-size) + 25px); 
