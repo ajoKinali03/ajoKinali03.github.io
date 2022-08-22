@@ -176,7 +176,7 @@
 
 .content .penengah .my-project .my-project-content a{
 	height: 50vh;
-	width: 100%;
+	width: 300px;
 	margin: 5px .5px;
 	background-color: black;
 	display: flex;
@@ -226,6 +226,20 @@
 }
 
 
+.content .penengah .my-project .my-project-content .project-4{
+	background-image: url(img/tabelPenulusuran.jpg);
+	background-size: cover;
+	background-position: 60%, 0;
+}
+
+
+.content .penengah .my-project .my-project-content .project-5{
+	background-image: url(img/forBersarang.jpg);
+	background-size: cover;
+	background-position: 50%, 0;
+}
+
+
 
 .content .penengah .ctnDisplay{
 	display: block !important;
@@ -243,7 +257,7 @@
 	height: 40px;
 	position: absolute;
 	z-index: 4;
-	bottom: 10.5%;
+	bottom: 3%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -328,6 +342,7 @@
 		width: calc(var(--btn-skip-size) + 20px);
 		height: calc(var(--btn-skip-size) + 20px); 
 	}
+	.content .penengah .my-project .my-project-content a{width: 100%;}
 }
 
 @media screen and (max-width: 600px){
@@ -339,6 +354,7 @@
 		width: calc(var(--btn-skip-size) + 25px);
 		height: calc(var(--btn-skip-size) + 25px); 
 	}
+	.content .penengah .my-project .my-project-content a{width: 100%;}
 }
 
 

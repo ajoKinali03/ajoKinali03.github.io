@@ -28,6 +28,7 @@ pageBtn.addEventListener('click', () => {
         setTimeout(() => {
             contrSlider.style.opacity = '1';
             contrSlider.style.transition = '1s';
+            pageBtn.style.display = 'none';
         }, 500);
     };
     if(biner == 2){
