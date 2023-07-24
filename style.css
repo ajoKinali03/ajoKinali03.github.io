@@ -1,117 +1,178 @@
-
-*{
-	/* outline: solid 1px green; */
-	box-sizing: border-box;
+* {
+  /* outline: solid 1px green; */
+  box-sizing: border-box;
 }
 
-*::selection{
-	background-color: rgba(0,0,0,.8);
-	color: white;
+:root {
+  --icon-navbar-w: 40px;
+  --icon-navbar-h: 40px;
 }
 
-.page{
-	margin: 0;
-	padding: 0;
+*::selection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
+.page {
+  margin: 0;
+  padding: 0;
+}
 
-
-
-
+.navbar > ol > li > img {
+  width: var(--icon-navbar-w);
+  height: var(--icon-navbar-h);
+  margin: calc(var(--icon-navbar-h) / 5) 0px calc(var(--icon-navbar-h) / 5) 0px;
+}
 
 /* responsif */
 
-
-
-@media screen and (max-width: 900px){
-	
+@media screen and (max-width: 900px) {
 }
 
-@media screen and (max-width: 600px){
-	
+@media screen and (max-width: 600px) {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* reset */
 
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-
-
 /* input reset */
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
 button:hover,
 label:focus,
 .btn:active,
-.btn.active
-{
-    outline:0px !important;
-    /* -webkit-appearance:none; */
-    box-shadow: none !important;
+.btn.active {
+  outline: 0px !important;
+  /* -webkit-appearance:none; */
+  box-shadow: none !important;
 }
