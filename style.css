@@ -1,5 +1,5 @@
 * {
-  outline: solid 1px green;
+  /* outline: solid 1px green; */
   box-sizing: border-box;
 }
 
@@ -51,7 +51,7 @@
   margin: calc(var(--icon-navbar-h) / 5) 0px calc(var(--icon-navbar-h) / 5) 0px;
 }
 
-.page > img {
+#home > img {
   width: 240px;
   rotate: 70deg;
   translate: 50px 200px;
@@ -65,6 +65,21 @@
   translate: 50px 190px;
   font-size: 71px;
   width: fit-content;
+}
+
+#info > img {
+  width: 250px;
+  margin-left: 10vw;
+  border: #9B4DD8 5px solid;
+  border-radius: 31px;
+  z-index: 2;
+}
+
+#skill > div > .bgnr{
+  font-size: 80px;
+}
+#skill > div > .itrmdt{
+  font-size: 80px;
 }
 
 /* responsif */
