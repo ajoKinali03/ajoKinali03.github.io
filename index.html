@@ -10,78 +10,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Raleway:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body style="overflow-y: scroll; overflow-x: hidden; scrollbar-width: auto">
-    <div
-      class="container"
-      style="
-        background: rgb(20, 1, 44);
-        background: linear-gradient(
-          8deg,
-          rgba(20, 1, 44, 1) 0%,
-          rgba(79, 7, 104, 1) 25%,
-          rgba(174, 48, 251, 1) 51%,
-          rgba(79, 7, 104, 1) 77%,
-          rgba(0, 0, 10, 1) 100%
-        );
-      "
-    >
-      <div
-        class="navbar"
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #410570;
-          height: 270px;
-          width: 70px;
-          position: fixed;
-          right: 0;
-          top: calc(50vh - 270px / 2);
-          border-radius: 20px 0px 0px 20px;
-        "
-      >
-        <ol>  
+    <div class="container">
+      <div class="navbar">
+        <ol>
           <li>
-            <img
-              src="img/home white.webp"
-              alt="home"
-            />
+            <a href="#home">
+              <img src="img/home white.webp" alt="home" />
+            </a>
           </li>
           <li>
-            <img
-              src="img/info-white.webp"
-              alt="info"
-            />
+            <a href="#info">
+              <img src="img/info-white.webp" alt="info" />
+            </a>
           </li>
           <li>
-            <img
-              src="img/creative-thingking white.webp"
-              alt="skill"
-            />
-            <li>
-              <img
-                src="img/portfolio white.webp"
-                alt="portfolio"
-              />
-            </li>
+            <a href="#skill">
+              <img src="img/creative-thingking white.webp" alt="skill" />
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <img src="img/portfolio white.webp" alt="portfolio" />
+            </a>
           </li>
         </ol>
       </div>
-      <div class="page"></div>
-      <div class="page"></div>
-      <div class="page"></div>
-      <div class="page"></div>
+      <div class="page" id="home">
+        <p>Hi, I'm Azwar Hamid</p>
+        <img src="img/cursor.webp" alt="cursor" />
+      </div>
+      <div class="page" id="info">
+        <p>I'm Backend Web Developer</p>
+        <p>
+          My name is Azwar Hamid. I am a beginner in the field of web
+          development, and I have two years of self-taught experience. During
+          this time, I have worked on numerous personal projects to enhance my
+          skills. Currently.
+        </p>
+      </div>
+      <div class="page" id="skill"></div>
+      <div class="page" id="portfolio"></div>
     </div>
     <script src="main.js"></script>
   </body>
