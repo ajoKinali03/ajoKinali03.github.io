@@ -13,6 +13,10 @@
   color: white;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .container {
   background: rgb(20, 1, 44);
   background: linear-gradient(
@@ -49,6 +53,10 @@
   width: var(--icon-navbar-w);
   height: var(--icon-navbar-h);
   margin: calc(var(--icon-navbar-h) / 5) 0px calc(var(--icon-navbar-h) / 5) 0px;
+}
+
+body{
+  transition: all .3s;
 }
 
 #home > img {
